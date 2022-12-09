@@ -76,6 +76,7 @@ class _RandomNumbersState extends State<RandomNumbers> {
   void showEven() {
     setState(() {
       //TODO
+      tmpItems = items.where((item) => item.number.isEven);
     });
   }
 
@@ -86,6 +87,7 @@ class _RandomNumbersState extends State<RandomNumbers> {
   void showID() {
     setState(() {
       //TODO
+      tmpItems = items.where((item) => "620510597".contains(item.number.toString()));
     });
   }
 }
